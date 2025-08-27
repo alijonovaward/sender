@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Jo'natuvchi</title></head>
+<body>
+  <h1>Ism, familiya va rasm jo'natish</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>Ism: <input type="text" name="name"></p>
+    <p>Familiya: <input type="text" name="surname"></p>
+    <p>Rasm: <input type="file" name="image"></p>
+    <button type="submit">Jo'natish</button>
+  </form>
+</body>
+</html>
